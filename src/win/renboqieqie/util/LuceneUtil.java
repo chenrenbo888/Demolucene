@@ -32,6 +32,7 @@ public class LuceneUtil {
 	private static Version matchVersion = null;
 	
 	private static Analyzer analyzer = null;
+	
 	static {
 		
 		try {
@@ -40,6 +41,7 @@ public class LuceneUtil {
 			matchVersion = Version.LUCENE_44;
 			
 			analyzer = new StandardAnalyzer(matchVersion);
+			
 			config = new IndexWriterConfig(matchVersion ,analyzer);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -70,4 +72,26 @@ public class LuceneUtil {
 		
 		return indexSearcher;
 	}
+	/**
+	 * 获取单签版本信息
+	 * @return
+	 */
+	public static Version getMatchVersion() {
+		return matchVersion;
+	}
+	public static void setMatchVersion(Version matchVersion) {
+		LuceneUtil.matchVersion = matchVersion;
+	}
+	/**
+	 * 获取lucene的分词器
+	 * @return
+	 */
+	
+	public static Analyzer getAnalyzer() {
+		return analyzer;
+	}
+	public static void setAnalyzer(Analyzer analyzer) {
+		LuceneUtil.analyzer = analyzer;
+	}
+	
 }
