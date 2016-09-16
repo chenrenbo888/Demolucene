@@ -6,6 +6,8 @@
 	<classpathentry kind="lib" path="lib/lucene-analyzers-common-4.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-queryparser-4.4.0.jar"/>
 	<classpathentry kind="lib" path="lib/IKAnalyzer2012FF_u1.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-highlighter-4.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-memory-4.4.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
