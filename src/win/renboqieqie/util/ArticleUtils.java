@@ -32,6 +32,9 @@ public class ArticleUtils {
 		TextField titlefield = new TextField("title",article.getTitle(),Store.YES);
 		
 		TextField contentfield = new TextField("content",article.getContent(),Store.YES);
+	
+		//设置权重
+		//titlefield.setBoost(4f);
 		document.add(idfield);
 		document.add(authorfield);
 		document.add(urlfield);
